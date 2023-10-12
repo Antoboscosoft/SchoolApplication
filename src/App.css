@@ -1,27 +1,65 @@
 .App {
   text-align: center;
+  /* overflow-x: hidden;
+  overflow-block: hidden;
+  overflow-y: hidden; */
+  overflow: hidden;
+}
+
+.Main_logo {
+  background: url(../src/Assets/Images/LogoMoto.png) center/contain no-repeat;
+  /* width: 100px; */
+  min-height: 100px;
+  min-width: 100px;
+  background-repeat: no-repeat;
+  display: flex !important;
+   /* background-size: contain; */
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* height: 40vmin;
+  pointer-events: none; */
+
+  max-width: 100%; /* Ensure the image scales down to fit its container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove any default inline spacing */
+  overflow: hidden;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  max-width: 100%; /* Ensure the container scales with the image */
+  height: 70%; /* Allow the container's height to adjust based on the image */
+  position: relative; /* Maintain relative positioning */
+  overflow: hidden; /* Hide any overflow */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
+    width: auto;
+    height: 88vh;
+    position: relative;
+    overflow: hidden;
   }
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  position: relative;
+  /* flex-direction: column; */
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 4px;
 }
 
 .App-link {
@@ -35,4 +73,103 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Img_slide {
+  
+  /* background-image: url(../../../assets/icons/arrow.png); */
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 5px;
+}
+
+
+/* Image style css */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Add some styles for arrow buttons */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+/* Rolling the paper left-right */ 
+
+/* 01 */
+/* .mySlides.active {
+  animation: pageTurn 0.5s ease-in-out;
+}
+
+@keyframes pageTurn {
+  0%, 100% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(180deg);
+  }
+} */
+
+/* 02 */
+
+/* ... (your existing CSS code) ... */
+
+/* Add page-turning animations */
+/* .mySlides {
+  transform-origin: top right;
+  transform: perspective(1200px) rotateY(0deg);
+  opacity: 1;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.mySlides:not(.active) {
+  transform-origin: top left;
+  transform: perspective(1200px) rotateY(90deg);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+} */
+
+
+/* ... (your existing CSS code) ... */
+
+/* Add sliding animation for images */
+.mySlides {
+  width: 100%;
+  height: 100vh;
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.mySlides:not(.active) {
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
 }
