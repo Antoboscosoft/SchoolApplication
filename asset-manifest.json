@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/SchoolApplication/static/css/main.12874a13.css",
+    "main.js": "/SchoolApplication/static/js/main.3ad11fe2.js",
+    "static/js/787.a2f97abf.chunk.js": "/SchoolApplication/static/js/787.a2f97abf.chunk.js",
+    "static/media/pexabay09.jpg": "/SchoolApplication/static/media/pexabay09.172860ffb10ea38cac77.jpg",
+    "static/media/pexabay10.jpg": "/SchoolApplication/static/media/pexabay10.5da3f8de0898a53eb005.jpg",
+    "static/media/pexabay08.jpg": "/SchoolApplication/static/media/pexabay08.292c81bf1885c9a81fe1.jpg",
+    "static/media/pexabay11.jpg": "/SchoolApplication/static/media/pexabay11.fcecfb66066ee76ea148.jpg",
+    "static/media/pexabay03.jpg": "/SchoolApplication/static/media/pexabay03.0ae63aaa1fd229057e2e.jpg",
+    "static/media/pexabay07.jpg": "/SchoolApplication/static/media/pexabay07.a449f87e91df0e487d03.jpg",
+    "static/media/pexabay04.jpg": "/SchoolApplication/static/media/pexabay04.72e70f7a9029d5b010a0.jpg",
+    "static/media/pexabay05.jpg": "/SchoolApplication/static/media/pexabay05.134f79536eb2bfed329f.jpg",
+    "static/media/LogoMoto.png": "/SchoolApplication/static/media/LogoMoto.a60b1f7cd12418570ec5.png",
+    "static/media/pexabay06.jpg": "/SchoolApplication/static/media/pexabay06.c7ee21418aab38b889b2.jpg",
+    "static/media/Groot.jpg": "/SchoolApplication/static/media/Groot.3f4282ab54ce8c27890a.jpg",
+    "static/media/logo.svg": "/SchoolApplication/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/SchoolApplication/index.html",
+    "main.12874a13.css.map": "/SchoolApplication/static/css/main.12874a13.css.map",
+    "main.3ad11fe2.js.map": "/SchoolApplication/static/js/main.3ad11fe2.js.map",
+    "787.a2f97abf.chunk.js.map": "/SchoolApplication/static/js/787.a2f97abf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12874a13.css",
+    "static/js/main.3ad11fe2.js"
+  ]
+}
