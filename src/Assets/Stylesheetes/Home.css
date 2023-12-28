@@ -1,0 +1,22 @@
+.App-header {
+    text-align: start;
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    position: relative;
+    /* flex-direction: column; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-bottom: 4px;
+
+
+
+}
+
+.logout_style {
+    display: flex;margin-left: 2px;
+
+}
