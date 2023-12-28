@@ -1,8 +1,8 @@
 import login from "../Layouts/login";
-import home from "../home";
+import home from "../Home";
 
 const routes = [
-    { path: 'home', name:"Home", element: home},
+    { path: '/', name:"Home", element: home},
     { path: 'login', name:"Login", element: login},
 
 
