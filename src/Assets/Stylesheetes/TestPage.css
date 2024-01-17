@@ -1,0 +1,33 @@
+.Test_main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    background-color: lightgray;
+    /* background:  url(../Images/leaf.jpg) no-repeat right top; */
+    background-image: linear-gradient(to right, rgb(238, 129, 89) 50%, rgb(102, 102, 179) 50%);
+
+}
+
+.moving-button {
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.moving-button:hover {
+    transform: translate(50px, 50px);
+}
+
+.bg_img {
+    /* background-image: url(../Images/leaf.jpg); */
+    /* background-color: aquamarine; */
+    background-repeat: no-repeat;
+    background-position: right top;
+    /* margin-right: 200px; */
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+

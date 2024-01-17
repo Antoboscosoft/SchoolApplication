@@ -1,0 +1,8 @@
+.Chat_Container {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    color: aqua;
+}
