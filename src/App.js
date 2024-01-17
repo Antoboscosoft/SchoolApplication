@@ -14,9 +14,12 @@ import './App.css';
 // import CursorSparkle from '../src/Layouts/CursorSparkle'
 import { useEffect, useState } from 'react';
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
-import Login from './Layouts/login.js'
+import Login from './Layouts/Login.js'
 import Home from './Home.js'
 import Game from './Components/Game.js';
+import TestPage from './Components/TestPage.js';
+import ChatRoom from './Components/ChatRoom.js';
+import ChatApp from './Components/ChatApp.js';
 
 function App() {
 
@@ -87,6 +90,9 @@ function App() {
         <Route path='/' exact index element={<Login />} />
         <Route path='/home' index element={<Home />} />
         <Route path='/*' index element={<Game />} />
+        <Route path='Dash' exact element={<TestPage/>}/>
+        <Route path='ChatRoom' index element={<ChatRoom />}/>
+        <Route path='ChatApp' index element={<ChatApp/>}/>
       </Routes>
     </HashRouter>
   );

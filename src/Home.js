@@ -24,6 +24,10 @@ export default function Home() {
 
   const [slideIndex, setSlideIndex] = useState(0);
 
+  const [showConstruction, setShowConstruction] = useState(true);
+
+  const [showContent, setShowContent] = useState(false);
+
 
   // UseEffects:----
 
@@ -40,6 +44,14 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, []);
 
+
+  useEffect(() => {
+    document.addEventListener('click', handleClick);
+
+    return () => {
+      document.removeEventListener('click', handleClick);
+    };
+  }, []);
 
   // Functions:----
 
@@ -76,53 +88,90 @@ export default function Home() {
   }
 
 
+  const handlePreviewClick = () => {
+    console.log('show construct: ', showConstruction, "showContent :", showContent);
+    setShowConstruction(false); // Hide the construction message
+    setShowContent(true); // Show the content
+    console.log('show construct: ', showConstruction, "showContent :", showContent);
 
+  };
+
+  const handleClick = () => {
+    if (showContent) {
+      setShowConstruction(true);
+      setShowContent(true);
+    } else {
+      setShowConstruction(true);
+      setShowContent(true);
+    }
+  };
 
 
 
   return (
     // <div>home page 10</div>
-    <div className="App">
-      <header className="App-header">
-        <p className='Main_logo'></p>
-        <p> High-School &nbsp; &nbsp; </p>
-        <a
-          className="App-link"
-          href="https://schools.org.in/krishanagiri/33311202802/st-antonys-hr-sec-elathagiri.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          My School
-          {/* St.Antony's Higher Secondary School */}
-        </a>
-        <h4 className="logout_style"><Link to={"/"}>Logout</Link></h4>
-      <h4 className=''> Game</h4>
-      </header>
-      {/* <div className='d-flex justify-content-center'>
+    <>
+      {/* {!showContent && (
+
+        <div className="construction-message">
+          <p>This page is under construction</p>
+          <div className=''>
+            <button className="button_preview" onClick={()=>handlePreviewClick()}>
+            Preview
+          </button>
+          <h4 className="logout_style"><Link to={"/"}>Logout</Link></h4>
+          </div>
+          
+        </div>
+      )} */}
+      <div className={`App ${showConstruction ? 'blur' : ''} ${showContent ? 'show-content' : ''}`}>
+        <button className='Test_btn'>TEST </button>
+        <header className="App-header">
+          <p className='Main_logo'></p>
+          <p> High-School &nbsp; &nbsp; </p>
+          <a
+            className="App-link"
+            href="https://schools.org.in/krishanagiri/33311202802/st-antonys-hr-sec-elathagiri.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            My School
+            {/* St.Antony's Higher Secondary School */}
+          </a>
+          <h4 className=''> Game</h4>
+
+          {/* <!-- Under Construction message --> */}
+
+
+        </header>
+        {/* <div className='d-flex justify-content-center'>
       <h4 className=''><Link to={"/"}>Logout</Link></h4>
       <h4 className=''> Game</h4>
       </div> */}
-      <div>
-        <div className="slideshow-container">
-          <p className='Img_slide'>
-            <img src={img1} className={`mySlides ${slideIndex === 0 ? 'active' : ''}`} alt="Image 1" />
-            <img src={img2} className={`mySlides ${slideIndex === 1 ? 'active' : ''}`} alt="Image 2" />
-            <img src={img3} className={`mySlides ${slideIndex === 2 ? 'active' : ''}`} alt="Image 3" />
-            <img src={img4} className={`mySlides ${slideIndex === 3 ? 'active' : ''}`} alt="Image 4" />
-            <img src={img5} className={`mySlides ${slideIndex === 4 ? 'active' : ''}`} alt="Image 5" />
-            <img src={img6} className={`mySlides ${slideIndex === 5 ? 'active' : ''}`} alt="Image 6" />
-            <img src={img7} className={`mySlides ${slideIndex === 6 ? 'active' : ''}`} alt="Image 7" />
-            <img src={img8} className={`mySlides ${slideIndex === 7 ? 'active' : ''}`} alt="Image 8" />
-            <img src={img9} className={`mySlides ${slideIndex === 8 ? 'active' : ''}`} alt="Image 9" />
-            <img src={img10} className={`mySlides ${slideIndex === 9 ? 'active' : ''}`} alt="Image 10" />
+        <div>
+          <div className="slideshow-container">
+            <p className='Img_slide'>
+              <img src={img1} className={`mySlides ${slideIndex === 0 ? 'active' : ''}`} alt="Image 1" />
+              <img src={img2} className={`mySlides ${slideIndex === 1 ? 'active' : ''}`} alt="Image 2" />
+              <img src={img3} className={`mySlides ${slideIndex === 2 ? 'active' : ''}`} alt="Image 3" />
+              <img src={img4} className={`mySlides ${slideIndex === 3 ? 'active' : ''}`} alt="Image 4" />
+              <img src={img5} className={`mySlides ${slideIndex === 4 ? 'active' : ''}`} alt="Image 5" />
+              <img src={img6} className={`mySlides ${slideIndex === 5 ? 'active' : ''}`} alt="Image 6" />
+              <img src={img7} className={`mySlides ${slideIndex === 6 ? 'active' : ''}`} alt="Image 7" />
+              <img src={img8} className={`mySlides ${slideIndex === 7 ? 'active' : ''}`} alt="Image 8" />
+              <img src={img9} className={`mySlides ${slideIndex === 8 ? 'active' : ''}`} alt="Image 9" />
+              <img src={img10} className={`mySlides ${slideIndex === 9 ? 'active' : ''}`} alt="Image 10" />
 
-            <a className='prev' onClick={() => { plusSlides(-1) }}>&#10094;</a>
-            <a className='next' onClick={() => { plusSlides(1) }}>&#10095;</a>
-          </p>
+              <a className='prev' onClick={() => { plusSlides(-1) }}>&#10094;</a>
+              <a className='next' onClick={() => { plusSlides(1) }}>&#10095;</a>
+            </p>
+          </div>
+          <h4 className="logout_style"><Link to={"/"}>Logout</Link></h4>
+
+          {/* <CursorSparkle /> */}
         </div>
-
-        {/* <CursorSparkle /> */}
       </div>
-    </div>
+
+    </>
   )
 }
