@@ -1,0 +1,9 @@
+.SchoolLogo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../Images/pxfuel1.jpg)center;
+    /* background: no-repeat; */
+    color: white;
+    height: 100vh;
+}

@@ -1,0 +1,7 @@
+.ImgBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../Images/LogoMoto.png)center ;
+    height: 70vh;
+}

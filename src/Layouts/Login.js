@@ -18,7 +18,9 @@ function Login() {
     "Yes, you are correct it's from the begon i noticed.",
     "Yes, I accept your agreement do my needful to the way.",
     "Yes, will you be mine in the future?",
-    "Yes, I accept you situation and the thing."
+    "Yes, I accept you situation and the thing.",
+    "TeamLead, Angelin Prema",
+    "Manager of Unit-2A (Joe Nishanth)"
   ];
 
   // const scrollingText = "Keep abreast of hot news topics and current events and then let readers know how your company and clients are affected by these events. Examples can include seasonal events, such as the weather, as well as changes in laws and policies by the municipal, state or federal governments.";
@@ -148,6 +150,8 @@ function Login() {
         <div className='text-black'><Link to={"/ChatRoom"}>ChatRoom</Link></div>
         <div className='text-black'><Link to={"/ChatApp"}>ChatApp</Link></div>
         <div className='text-black'><Link to={"/dash"}>dash</Link></div>
+        <div className='text-white'><Link to={"/designPage"}>DesignPage</Link></div>
+        <div className='text-white'><Link to={"/MoteLogo"}>MoteLogo</Link></div>
       </div>
       <div className='Fotter_Container'>
         <p className='Fotter_title'>

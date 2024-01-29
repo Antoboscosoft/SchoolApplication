@@ -20,6 +20,8 @@ import Game from './Components/Game.js';
 import TestPage from './Components/TestPage.js';
 import ChatRoom from './Components/ChatRoom.js';
 import ChatApp from './Components/ChatApp.js';
+import DesignPage from './Components/DesignPage.js';
+import MoteLogo from '../src/Layouts/MoteLogo.js'
 
 function App() {
 
@@ -93,6 +95,8 @@ function App() {
         <Route path='Dash' exact element={<TestPage/>}/>
         <Route path='ChatRoom' index element={<ChatRoom />}/>
         <Route path='ChatApp' index element={<ChatApp/>}/>
+        <Route path='DesignPage' index element={<DesignPage/>}/>
+        <Route path='MoteLogo' index element={<MoteLogo/>}/>
       </Routes>
     </HashRouter>
   );
