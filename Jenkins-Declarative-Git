@@ -1,0 +1,10 @@
+pipeline{
+	agent any 
+	stages{
+		stage("Git Checkout"){
+			steps{
+			git branch: 'SchoolApp', url: 'https://github.com/Antoboscosoft/SchoolApplication.git'
+			}
+		}
+	}
+}
