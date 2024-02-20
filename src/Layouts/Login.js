@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../Assets/Stylesheetes/Login.css'
+import '../Assets/Stylesheetes/Login.css';
+import videoBackground from '../Assets/Videos/pexels1vid.mp4';
 
 function Login() {
 
@@ -146,18 +147,24 @@ function Login() {
         <div>{texts[textIndex].substring(0, letterIndex)}</div>
       </div>
       <div className='Body_Container'>
-        <div className={`text-black ${loginOpacity === 0 ? 'hidden' : ''}`}><Link to={"/home"}>Login</Link></div>
-        <div className='text-black'><Link to={"/ChatRoom"}>ChatRoom</Link></div>
-        <div className='text-black'><Link to={"/ChatApp"}>ChatApp</Link></div>
-        <div className='text-black'><Link to={"/dash"}>dash</Link></div>
-        <div className='text-white'><Link to={"/designPage"}>DesignPage</Link></div>
-        <div className='text-white'><Link to={"/MoteLogo"}>MoteLogo</Link></div>
+        <video autoPlay loop muted className='video-background'>
+          <source src={videoBackground} type='video/mp4'></source>
+        </video>
+        <div className=''
+        // className={`text-black ${loginOpacity === 0 ? 'hidden' : ''}`}
+        ><Link  style={{textDecoration:'none'}}  to={"/home"}>School Web-page Login</Link></div>
+        <div className='text-black'><Link className='' style={{textDecoration:'none'}} to={"/ChatRoom"}>ChatRoom</Link></div>
+        <div className='text-black'><Link  style={{textDecoration:'none'}}  to={"/ChatApp"}>ChatApp</Link></div>
+        <div className='text-black'><Link  style={{textDecoration:'none'}}  to={"/dash"}>dash</Link></div>
+        <div className='text-black'><Link  style={{textDecoration:'none'}}  to={"/SpeechText"}>Speech-To-Text</Link></div>
+        <div className='text-white'><Link  style={{textDecoration:'none'}}  to={"/designPage"}>DesignPage</Link></div>
+        <div className='text-white'><Link  style={{textDecoration:'none'}}  to={"/MoteLogo"}>MoteLogo</Link></div>
       </div>
       <div className='Fotter_Container'>
         <p className='Fotter_title'>
           Fotter text
         </p>
-        <marquee behavior="scroll" direction="left" scrollamount='12'>{scrollingText}</marquee>
+        <marquee behavior="scroll" direction="left" scrollamount='5'>{scrollingText}</marquee>
       </div>
     </div>
     </>

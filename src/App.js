@@ -22,6 +22,7 @@ import ChatRoom from './Components/ChatRoom.js';
 import ChatApp from './Components/ChatApp.js';
 import DesignPage from './Components/DesignPage.js';
 import MoteLogo from '../src/Layouts/MoteLogo.js'
+import SpeechPOC from './Components/SpeechPOC.js';
 
 function App() {
 
@@ -97,6 +98,7 @@ function App() {
         <Route path='ChatApp' index element={<ChatApp/>}/>
         <Route path='DesignPage' index element={<DesignPage/>}/>
         <Route path='MoteLogo' index element={<MoteLogo/>}/>
+        <Route path='SpeechText' index element={<SpeechPOC/>}/>
       </Routes>
     </HashRouter>
   );

@@ -1,7 +1,7 @@
 .App-header {
     text-align: start;
     background-color: #282c34;
-    min-height: 10vh;
+    /* min-height: 18vh; */
     display: flex;
     position: relative;
     /* flex-direction: column; */
@@ -11,9 +11,12 @@
     font-size: calc(10px + 2vmin);
     color: white;
     margin-bottom: 4px;
-
-
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    /* height: 12%; */
+    z-index: 1999;
 }
 
 .logout_style {
