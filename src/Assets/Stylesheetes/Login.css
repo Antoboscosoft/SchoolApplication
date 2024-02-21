@@ -70,5 +70,6 @@
     background-color: darkgray;
     /* width: -webkit-fill-available; */
     width: 10%;
-    height: 7vh;
+    height: 110%;
+    margin-top: 18px;
 }

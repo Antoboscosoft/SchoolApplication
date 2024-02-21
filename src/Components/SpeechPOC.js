@@ -4,6 +4,7 @@ import Swal from 'sweetalert2'; // Import the SweetAlert library
 import axios from 'axios'; // Import Axios or another HTTP client
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import CancelImg from '../Assets/Images/SpeechPocImg/cancelbtn.png';
+import { Link } from 'react-router-dom';
 
 
 function SpeechPOC() {
@@ -327,10 +328,13 @@ function SpeechPOC() {
 
 
     return (
-        <div className={`main_div card ${activeTab === 'records' ? 'orange-bg' : (activeTab === 'notes' ? 'lightgray-bg' : '')}`}>
+        <div className={`main_div vh-100 card ${activeTab === 'records' ? 'orange-bg' : (activeTab === 'notes' ? 'lightgray-bg' : '')}`}>
             {/* <div className='header card-header vw-99'>
             </div> */}
             {/* <div className='content'> */}
+            <div className=''>
+                <h4 className="logout_style"><Link to={"/"}>Logout</Link></h4>
+            </div>
             <div className='Final-container mt-5 d-flex justify-content-center align-items-center main_content_actionpoint'>
                 <div className='col'>
                     <div>
