@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/SchoolApplication/static/css/main.12874a13.css",
-    "main.js": "/SchoolApplication/static/js/main.3ad11fe2.js",
+    "main.css": "/SchoolApplication/static/css/main.47b243ab.css",
+    "main.js": "/SchoolApplication/static/js/main.28250e37.js",
     "static/js/787.a2f97abf.chunk.js": "/SchoolApplication/static/js/787.a2f97abf.chunk.js",
+    "static/media/pexels1vid.mp4": "/SchoolApplication/static/media/pexels1vid.204282fce0a2ae1b1041.mp4",
     "static/media/pexabay09.jpg": "/SchoolApplication/static/media/pexabay09.172860ffb10ea38cac77.jpg",
     "static/media/pexabay10.jpg": "/SchoolApplication/static/media/pexabay10.5da3f8de0898a53eb005.jpg",
     "static/media/pexabay08.jpg": "/SchoolApplication/static/media/pexabay08.292c81bf1885c9a81fe1.jpg",
@@ -13,15 +14,19 @@
     "static/media/pexabay05.jpg": "/SchoolApplication/static/media/pexabay05.134f79536eb2bfed329f.jpg",
     "static/media/LogoMoto.png": "/SchoolApplication/static/media/LogoMoto.a60b1f7cd12418570ec5.png",
     "static/media/pexabay06.jpg": "/SchoolApplication/static/media/pexabay06.c7ee21418aab38b889b2.jpg",
+    "static/media/pxfuel1.jpg": "/SchoolApplication/static/media/pxfuel1.f9edb0a801b1b5fc4ae2.jpg",
     "static/media/Groot.jpg": "/SchoolApplication/static/media/Groot.3f4282ab54ce8c27890a.jpg",
+    "static/media/lightbult-off.png": "/SchoolApplication/static/media/lightbult-off.7af56f6158e555a4459e.png",
+    "static/media/light-bulb-on.png": "/SchoolApplication/static/media/light-bulb-on.7f46a6d74cec09d6012a.png",
+    "static/media/cancelbtn.png": "/SchoolApplication/static/media/cancelbtn.d47f0e1ad5abb6bff151.png",
     "static/media/logo.svg": "/SchoolApplication/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/SchoolApplication/index.html",
-    "main.12874a13.css.map": "/SchoolApplication/static/css/main.12874a13.css.map",
-    "main.3ad11fe2.js.map": "/SchoolApplication/static/js/main.3ad11fe2.js.map",
+    "main.47b243ab.css.map": "/SchoolApplication/static/css/main.47b243ab.css.map",
+    "main.28250e37.js.map": "/SchoolApplication/static/js/main.28250e37.js.map",
     "787.a2f97abf.chunk.js.map": "/SchoolApplication/static/js/787.a2f97abf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12874a13.css",
-    "static/js/main.3ad11fe2.js"
+    "static/css/main.47b243ab.css",
+    "static/js/main.28250e37.js"
   ]
 }
